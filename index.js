@@ -22,6 +22,8 @@ var title = document.querySelect("h1");
 
 if(roll1 > roll2){
     title.textContent = "Player 1 Wins!";
-}else{
+}else if(roll1 < roll2){
     title.textContent = "Player 2 Wins!";
-} 
+}else{
+    title.textContent = "Draw!";
+}
